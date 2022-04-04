@@ -9,10 +9,6 @@
 #include <time.h>
 #endif
 
-
-#ifndef CQLITE
-#define CQLITE
-
 typedef struct sqlog
 {
 	sqlite3 *sql;
@@ -32,4 +28,4 @@ int clear_log(sqlog *, int);
 
 //Internal functions for sqlog.c
 int save_log_metadata(sqlog *);
-#endif
+

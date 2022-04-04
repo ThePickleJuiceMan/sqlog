@@ -1,9 +1,5 @@
 #include "sqlog.h"
 
-
-#ifndef OPEN_DB
-#define OPEN_DB
-
 int execute_log_ddl(sqlog *);
 int execute_log_dml(sqlog *, char * log_text);
 
@@ -147,4 +143,3 @@ int execute_log_dml(sqlog *log, char * log_text)
 	return SQLITE_OK;
 
 }
-#endif
